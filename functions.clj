@@ -32,11 +32,11 @@
 (defn apply-discount ; Introducing conditional (if <condition> <return if true> <return if false>
     "Apply a defined discount in an inserted parameter if absolute value is greatter than 100" 
     [absolute-value] 
-    (if (> absolute-value 100)
+    (if (> absolute-value 100) ; condition
       (let [discount 0.10] 
-        (println "Calculating discount of" discount)
-        (* absolute-value (- 1 discount))))) ; Once false is not defined, return nill in case of false
-(apply-discount 100) 
+        (println "Calculating discount of" discount) 
+        (* absolute-value (- 1 discount))))) ; Return if ture
+(apply-discount 100) ; Return nill in case of false, once false is not defined
 
 (defn apply-discount ; Introducing conditional if (if <condition> <return if true> <return if false>
     "Apply a defined discount in an inserted parameter if absolute value is greatter than 100" 
@@ -44,6 +44,6 @@
     (if (> absolute-value 100)
       (let [discount 0.10] 
         (println "Calculating discount of" discount)
-        (* absolute-value (- 1 discount)))
+        (* absolute-value (- 1 discount))) ; Return if ture
     absolute-value)) ; Return absolute-value in case of false
 (apply-discount 100) 
