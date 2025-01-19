@@ -1,3 +1,4 @@
+.DS_Store
 pom.xml
 pom.xml.asc
 *.jar
@@ -14,4 +15,3 @@ pom.xml.asc
 .cpcache/
 .lsp/
 .clj-kondo/
-.DS_Store

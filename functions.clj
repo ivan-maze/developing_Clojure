@@ -29,7 +29,7 @@
       (* absolute-value (- 1 discount)))) 
 (apply-discount 100) ; should return 90N what is a BigInt (N = BigInt ; M = BigDecimal)
 
-(defn apply-discount ; Introducing conditional if
+(defn apply-discount ; Introducing conditional (if <condition> <return if true> <return if false>
     "Apply a defined discount in an inserted parameter if absolute value is greatter than 100" 
     [absolute-value] 
     (if (> absolute-value 100)
@@ -38,7 +38,7 @@
         (* absolute-value (- 1 discount))))) ; Once false is not defined, return nill in case of false
 (apply-discount 100) 
 
-(defn apply-discount ; Introducing conditional if
+(defn apply-discount ; Introducing conditional if (if <condition> <return if true> <return if false>
     "Apply a defined discount in an inserted parameter if absolute value is greatter than 100" 
     [absolute-value] 
     (if (> absolute-value 100)
