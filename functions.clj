@@ -35,7 +35,7 @@
     (if (> absolute-value 100) ; condition
       (let [discount 0.10] 
         (println "Calculating discount of" discount) 
-        (* absolute-value (- 1 discount))))) ; Return if ture
+        (* absolute-value (- 1 discount))))) ; Return if true
 (apply-discount 100) ; Return nill in case of false, once false is not defined
 
 (defn apply-discount ; Introducing conditional if (if <condition> <return if true> <return if false>
@@ -44,6 +44,6 @@
     (if (> absolute-value 100)
       (let [discount 0.10] 
         (println "Calculating discount of" discount)
-        (* absolute-value (- 1 discount))) ; Return if ture
+        (* absolute-value (- 1 discount))) ; Return if true
     absolute-value)) ; Return absolute-value in case of false
 (apply-discount 100) 
