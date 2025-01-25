@@ -1,3 +1,4 @@
+(ns developing-clojure.functions)
 (defn apply-discount [absolute-value] ; defining the function name and its [parameter]
     (* absolute-value 0.9)) ; multiplying parameter for a decimal 
 (apply-discount 100) ; return the function result for a defined parameter 
